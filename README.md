@@ -13,7 +13,7 @@ The following contributions were undertaken by my teammates:
 - (Lo Yin-Fan) **Section 5:** Strategy 1 - Extended Straddle
 - (Zhuo Yunhui) **Section 5:** Strategy 2 - Options Pricing Model
 
-This collaborative effort allows for a comprehensive examination of the project's scope and outcomes. If you have inquiries or require further details, please feel free to reach out. Thank you for your interest.
+This collaborative effort allows for a comprehensive examination of the project's scope and outcomes. If you have inquiries or require further details, please feel free to reach out. Thank you for your interest!
 
 ## Section 1 – Basic Analysis and Visualizations of the Portfolio
 The daily prices of the 4 cryptos are retrieved from Yahoo Finance for the period of 2020-02-01 to 2022-02-01, and the daily log returns are calculated using ln(St+1/St) from Adjusted Close. The asset return correlations are plotted using a matrix heatmap, and the annualized Sharpe ratios of the four crypto assets are plotted using a bar chart. The Sharpe ratios are calculated using the assumption that the risk-free rate is zero and annualized by multiplying sqrt(365) because crypto markets, unlike stocks, are always open 365 days a year.
