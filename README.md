@@ -21,7 +21,7 @@ The daily prices of the 4 cryptos are retrieved from Yahoo Finance for the perio
 The matrix heatmap shows a positive correlation between all 4 crypto asset returns, with a weak correlation (ρ=0.28) between MATIC-USD and DOGE-USD and a strong correlation (ρ=0.82) between BTC-USD and ETH-USD. Notably, DOGE-USD returns exhibit the lowest correlation with the other 3 cryptos, with coefficients less than 0.5. From the bar chart, investing in MATIC-USD, which has the highest Sharpe ratio of 1.38, maximizes risk-adjusted returns for a single-crypto portfolio. Additionally, BTC-USD is a suboptimal asset as its Sharpe ratio is the lowest at 0.9 < 1, suggesting that its returns do not effectively offset its risk.
 
 ## Section 3 – Calculating the VaR(5%) for the Component Assets
-We used the historical simulation approach to estimate the daily VaR and ES of the percentage return of all the individual component crypto assets and the portfolio (no limit to holding weights setting) at the α = 5% level. The daily VaR and ES were calculated using a rolling basis, with a sample period of 365 days before the focal trading day of VaR, inclusive of the day itself. Then, the VaR and ES curves were plotted for one year (2021-2-1 to 2022-2-1).
+We used the historical simulation approach to estimate the daily VaR and ES of the percentage return of all the individual component crypto assets and the portfolio (no limit to holding weights setting) at the α = 5% level. The daily VaR and ES were calculated using a rolling basis, with a sample period of 365 days before the focal trading day of VaR (inclusive of the day itself), and the curves were plotted for one year (2021-2-1 to 2022-2-1).
 
 From the graphs, the most risky component asset is undeniably DOGE-USD. First, the Value at Risk for DOGE-USD is consistently among the two highest assets for the entire
 period. This indicates that the likelihood of experiencing losses beyond a certain level is greater compared to the other assets. Second, the Expected Shortfall for DOGE-USD is also the highest for most of the period, indicating that not only is the probability of losses beyond the Value at Risk higher, but the magnitude of the average loss is also higher. Hence, there is a higher likelihood of experiencing larger losses for DOGE-USD.
@@ -32,8 +32,8 @@ We considered a strategy similar to Strategy 1, where we plan to buy one straddl
 mostly constructed from Bitcoin, we want to buy straddles for Bitcoin every month. However, we ranked the put and call options using the option's “moneyness”, which is
 calculated from the option's strike price, the current price of the underlying asset and the option premium using Equation 1 for call options and Equation 2 for put options below.
 ```
-Moneyness Ratio = (Spot Price - Strike Price) / Call Option Premium --- (1)
-Moneyness Ratio = (Strike Price - Spot Price) / Put Option Premium --- (2)
+[1] Moneyness Ratio = (Spot Price - Strike Price) / Call Option Premium
+[2] Moneyness Ratio = (Strike Price - Spot Price) / Put Option Premium
 ```
 
 The moneyness ratio provides a measure of how much the option is in or out of the money, taking into account the option premium. Options that are “in the money” (i.e., the strike price is lower/higher than the current price for calls/puts) would have a moneyness of greater than 0, while options that are “out of the money” (i.e., the strike price is higher/lower than the current price for calls/puts) would have a moneyness less than 0. We can then rank the options based on their moneyness, with a higher ratio indicating that the option is more in the money and a lower ratio indicating that the option is more out of the money.
