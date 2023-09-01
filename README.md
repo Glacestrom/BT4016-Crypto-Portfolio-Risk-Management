@@ -1,4 +1,6 @@
 # BT4016 - Crypto Portfolio Risk Management
+Project Dates: March 2023 - April 2023
+## Disclaimer
 This GitHub repository represents a collaborative group project in which I contributed to various components.  
 Specifically, my contributions encompass:
 1. **Section 1:** Basic analysis and visualizations of the portfolio.
